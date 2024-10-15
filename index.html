@@ -17,7 +17,12 @@
             print-color-adjust: exact !important;
         }
 
-       h1 , h2 , h4 , h5 , h3 , h6 ,
+        h1,
+        h2,
+        h4,
+        h5,
+        h3,
+        h6,
         p {
             margin: 0;
             margin-bottom: 5px;
@@ -26,6 +31,7 @@
         td {
             vertical-align: top;
         }
+
         tr td {
             padding-top: 5px;
         }
@@ -74,10 +80,15 @@
             height: 30px;
         }
 
+        @page {
+            size: A4;
+        }
+
         @media print {
             body {
-                width: 21cm;
-                height: 29.7cm;
+                width: 210mm;
+                height: 297mm;
+                padding-top: 12mm;
                 margin: 0mm 10mm;
             }
         }
@@ -184,20 +195,20 @@
                 </tr>
                 <tr style="border-top: 4px solid #EEEEEE;">
                     <td colspan="3" style="vertical-align: middle;">
-                       <h5>مجموع السلة</h5> 
+                        <h5>مجموع السلة</h5>
                     </td>
                     <td colspan="3" style="text-align: end; vertical-align: middle;">
-                      <h5>1650 ر.س</h5> 
+                        <h5>1650 ر.س</h5>
                     </td>
                 </tr>
                 <tr class="bg-grey" style="background-color: #EEEEEE;">
                     <td style="vertical-align: middle;" colspan="3">
                         <h5>اجمالى الطلب</h5>
-                        
+
                     </td>
                     <td colspan="3" style="text-align: end;vertical-align: middle;">
                         <h5>1650 ر.س</h5>
-                       
+
                     </td>
                 </tr>
             </tbody>
